@@ -146,6 +146,7 @@ const empresas = [
 }
 
 /* Efeito de brilho no fundo */
+/* Efeito de brilho no fundo - Ajustado para não cortar a tela no mobile */
 .bg-glow {
   position: absolute;
   top: 0;
@@ -154,5 +155,26 @@ const empresas = [
   height: 100%;
   background: radial-gradient(circle, rgba(0, 168, 232, 0.08) 0%, transparent 70%);
   pointer-events: none;
+  z-index: 0;
+}
+
+/* Ajuste para Mobile */
+@media (max-width: 768px) {
+  .bg-glow {
+    width: 100%; /* Ocupa a largura toda para o degradê ser suave */
+    right: 0;
+    top: -20%; /* Move para o topo para não cruzar o meio dos cards */
+    height: 50%;
+    background: radial-gradient(circle, rgba(0, 168, 232, 0.05) 0%, transparent 70%);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    filter: brightness(0) invert(1) opacity(1) !important; /* Sempre visível no celular */
+  }
+  .company-label {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 </style>
