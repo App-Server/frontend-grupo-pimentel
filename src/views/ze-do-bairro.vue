@@ -1,13 +1,16 @@
 <script setup>
+import BrandBanner from '@/components/BrandBanner.vue';
 import Footer from '@/components/Footer.vue';
 import Navbar from '@/components/Navbar.vue';
+import NossasLojas from '@/components/NossasLojas.vue';
 
 </script>
 
 <template>
   <div>
     <Navbar />
-    <h1>This is an about page</h1>
+    <BrandBanner />
+    <NossasLojas />
     <Footer />
   </div>
 </template>
