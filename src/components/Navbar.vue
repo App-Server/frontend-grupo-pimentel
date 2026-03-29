@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar p-3">
     <div class="container">
       <RouterLink class="navbar-brand ms-lg-5" to="/">
-        <img src="@/assets/logo-gp.png" alt="Grupo Pimentel" height="80">
+        <img src="@/assets/logo-gp.png" alt="Grupo Pimentel" height="60">
       </RouterLink>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -20,19 +20,19 @@
           <li class="nav-item">
             <RouterLink class="nav-link fw-bold" to="ultra">Ultra Popular</RouterLink>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <RouterLink class="nav-link fw-bold" to="">Promedh</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link fw-bold" to="">DPA & Promedh</RouterLink>
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <div class="d-none d-lg-flex me-lg-5 gap-3">
-        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-whatsapp fs-4"></i></a>
+        <a href="https://www.instagram.com/grupo.pimentel/" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+        <!-- <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-whatsapp fs-4"></i></a> -->
       </div>
     </div>
   </nav>

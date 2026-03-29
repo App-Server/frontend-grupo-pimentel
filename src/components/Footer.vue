@@ -10,9 +10,9 @@
             Construindo um futuro mais saudável para todos.
           </p>
           <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
-            <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-circle"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social-circle"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/grupo.pimentel/" class="social-circle"><i class="bi bi-instagram"></i></a>
+            <!-- <a href="#" class="social-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-circle"><i class="bi bi-whatsapp"></i></a> -->
           </div>
         </div>
 
@@ -20,8 +20,8 @@
           <h5 class="footer-title">Navegação</h5>
           <ul class="footer-links">
             <li><RouterLink to="/">Home</RouterLink></li>
-            <li><RouterLink to="/portfolio">Portfolio</RouterLink></li>
-            <li><RouterLink to="/trabalhe-conosco">Trabalhe conosco</RouterLink></li>
+            <!-- <li><RouterLink to="/portfolio">Portfolio</RouterLink></li>
+            <li><RouterLink to="/trabalhe-conosco">Trabalhe conosco</RouterLink></li> -->
           </ul>
         </div>
 
@@ -29,8 +29,8 @@
           <h5 class="footer-title">Nossas Marcas</h5>
           <ul class="footer-links">
             <li><RouterLink to="/ze-do-bairro">Farmácias Zé do Bairro</RouterLink></li>
-            <li><RouterLink to="/promedh">Promedh</RouterLink></li>
-            <li><RouterLink to="/dpa">DPA Distribuidora</RouterLink></li>
+            <!-- <li><RouterLink to="/promedh">Promedh</RouterLink></li>
+            <li><RouterLink to="/dpa">DPA Distribuidora</RouterLink></li> -->
             <li><RouterLink to="/ultra">Ultra Popular</RouterLink></li>
           </ul>
         </div>

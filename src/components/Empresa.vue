@@ -53,9 +53,9 @@ import logoUltra from '@/assets/ultrapopular.png'
 const empresas = [
   { nome: 'DPA', logo: logoDPA, link: '#' },
   { nome: 'PROmédH Produtos', logo: logoPromedH, link: '#' },
-  { nome: 'Zé do Bairro', logo: LogoZedobairro, link: '#' },
+  { nome: 'Zé do Bairro', logo: LogoZedobairro, link: '/ze-do-bairro' },
   { nome: 'PROmédH Distribuidora', logo: logoPromedHDist, link: '#' },
-  { nome: 'Ultra Popular', logo: logoUltra, link: '#' },
+  { nome: 'Ultra Popular', logo: logoUltra, link: '/ultra' },
 ]
 </script>
 
