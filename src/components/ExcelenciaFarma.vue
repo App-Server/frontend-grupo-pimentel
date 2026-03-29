@@ -18,10 +18,6 @@
             <div class="card-body text-center p-0">
               <h5 class="fw-bold text-navy mb-2">{{ empresa.nome }}</h5>
               <p class="text-muted small mb-0">{{ empresa.tipo }}</p>
-              
-              <a href="#" class="btn btn-sm text-navy mt-2 rounded-5 btn-see-more">
-                <i class="bi bi-plus-lg"></i>
-              </a>
             </div>
 
           </div>

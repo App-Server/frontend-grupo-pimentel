@@ -11,12 +11,6 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 loja-card">
             <div class="card-body p-4 d-flex flex-column">
               
-              <div class="mb-3">
-                <span class="badge" :class="getStatusClass(loja.status)">
-                  {{ loja.status }}
-                </span>
-              </div>
-
               <h5 class="fw-bold mb-2" style="color: #333;">{{ loja.nome }}</h5>
               
               <a :href="'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Farmácias Zé do Bairro ' + loja.endereco)" 
@@ -25,8 +19,6 @@
                 <i class="bi bi-geo-alt-fill text-danger me-1"></i>
                 {{ loja.endereco }}
               </a>
-
-              
 
               <div class="d-flex gap-2">
                 <a :href="'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loja.endereco)" 

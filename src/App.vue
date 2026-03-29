@@ -1,17 +1,6 @@
-<script setup>
-import { ref } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
-
-// Lógica do WhatsApp
-const isOpen = ref(false)
-const phoneNumber = '557999621457' // Número extraído da fachada da loja
-const message = 'Olá! Gostaria de mais informações sobre o Grupo Pimentel.'
-const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-</script>
-
 <template>
   <div class="whatsapp-container">
-    <Transition name="fade">
+    <Transition name="fade-popup">
       <div v-if="isOpen" class="whatsapp-popup shadow-lg">
         <div class="popup-header">
           <div class="d-flex align-items-center gap-2">
@@ -28,12 +17,8 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
         </div>
         
         <div class="popup-body p-3 text-dark bg-white">
-          <div class="message-bubble sender mb-2">
-            Olá, tudo bem?
-          </div>
-          <div class="message-bubble sender mb-3">
-            Quer falar conosco via WhatsApp?
-          </div>
+          <div class="message-bubble sender mb-2">Olá, tudo bem?</div>
+          <div class="message-bubble sender mb-3">Quer falar conosco via WhatsApp?</div>
           <a :href="whatsappUrl" target="_blank" class="btn btn-whatsapp-direct w-100 rounded-pill">
             Sim, falar agora
           </a>
@@ -48,11 +33,48 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
     </button>
   </div>
   
-  <RouterView />
+  <router-view v-slot="{ Component }">
+    <transition name="page-slide" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
-<style scoped>
-/* Estilos do WhatsApp unificados */
+<script setup>
+import { ref } from 'vue'
+import { RouterView } from 'vue-router'
+
+const isOpen = ref(false)
+const phoneNumber = '557999621457'
+const message = 'Olá! Gostaria de mais informações sobre o Grupo Pimentel.'
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+</script>
+
+<style>
+/* Estilos Globais para a transição funcionar bem */
+body {
+  background-color: #002d5f; /* Cor azul que você pediu */
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Animação da Página (Slide + Fade) */
+.page-slide-enter-active,
+.page-slide-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+.page-slide-enter-from {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.page-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+/* --- Seus estilos do WhatsApp (Mantidos) --- */
 .whatsapp-container {
   position: fixed;
   bottom: 30px;
@@ -74,10 +96,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.btn-float-wa.active {
-  background-color: #666;
-  transform: rotate(90deg);
-}
+.btn-float-wa.active { background-color: #666; transform: rotate(90deg); }
 
 .whatsapp-popup {
   position: absolute;
@@ -90,48 +109,13 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
   transform-origin: bottom right;
 }
 
-.popup-header {
-  background-color: #25d366;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.message-bubble {
-  background-color: #f0f0f0;
-  padding: 8px 12px;
-  border-radius: 0 15px 15px 15px;
-  font-size: 0.9rem;
-  display: block;
-}
-
-.btn-whatsapp-direct {
-  background-color: #25d366;
-  color: white;
-  font-weight: bold;
-}
-
-.online-badge {
-  width: 10px;
-  height: 10px;
-  background-color: #4edb64;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  border: 1px solid white;
-}
+.popup-header { background-color: #25d366; color: white; padding: 15px; display: flex; justify-content: space-between; }
+.message-bubble { background-color: #f0f0f0; padding: 8px 12px; border-radius: 0 15px 15px 15px; font-size: 0.9rem; }
+.btn-whatsapp-direct { background-color: #25d366; color: white; font-weight: bold; border: none; }
 
 .notification-dot {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 15px;
-  height: 15px;
-  background-color: #ff3b30;
-  border: 2px solid white;
-  border-radius: 50%;
+  position: absolute; top: 0; right: 0; width: 15px; height: 15px;
+  background-color: #ff3b30; border: 2px solid white; border-radius: 50%;
   animation: pulse 2s infinite;
 }
 
@@ -141,6 +125,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
 }
 
-.fade-enter-active, .fade-leave-active { transition: all 0.3s ease; }
-.fade-enter-from, .fade-leave-to { opacity: 0; transform: translateY(20px) scale(0.8); }
+/* Transição específica do Popup do WhatsApp */
+.fade-popup-enter-active, .fade-popup-leave-active { transition: all 0.3s ease; }
+.fade-popup-enter-from, .fade-popup-leave-to { opacity: 0; transform: translateY(20px) scale(0.8); }
 </style>

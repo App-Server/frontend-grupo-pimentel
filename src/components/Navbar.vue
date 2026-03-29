@@ -18,7 +18,7 @@
             <RouterLink class="nav-link fw-bold" to="ze-do-bairro">Zé de Bairro</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link fw-bold" to="">Ultra Popular</RouterLink>
+            <RouterLink class="nav-link fw-bold" to="ultra">Ultra Popular</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link fw-bold" to="">Promedh</RouterLink>

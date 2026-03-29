@@ -31,7 +31,7 @@
             <li><RouterLink to="/ze-do-bairro">Farmácias Zé do Bairro</RouterLink></li>
             <li><RouterLink to="/promedh">Promedh</RouterLink></li>
             <li><RouterLink to="/dpa">DPA Distribuidora</RouterLink></li>
-            <li><RouterLink to="/ultra-popular">Ultra Popular</RouterLink></li>
+            <li><RouterLink to="/ultra">Ultra Popular</RouterLink></li>
           </ul>
         </div>
 
@@ -64,7 +64,7 @@
 
 <style scoped>
 .main-footer {
-  background-color: #001a38; /* Azul ainda mais profundo para o rodapé */
+  background-color: #002d5f; /* Azul ainda mais profundo para o rodapé */
   color: #ffffff;
 }
 
