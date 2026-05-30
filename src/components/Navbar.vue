@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar p-3">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar p-3">
     <div class="container">
       <RouterLink class="navbar-brand ms-lg-5" to="/">
         <img src="@/assets/logo-gp.png" alt="Grupo Pimentel" height="60">
