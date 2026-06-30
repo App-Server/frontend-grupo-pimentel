@@ -31,7 +31,7 @@
             <li><RouterLink to="/ze-do-bairro">Farmácias Zé do Bairro</RouterLink></li>
             <!-- <li><RouterLink to="/promedh">Promedh</RouterLink></li>
             <li><RouterLink to="/dpa">DPA Distribuidora</RouterLink></li> -->
-            <li><RouterLink to="/ultra">Ultra Popular</RouterLink></li>
+            <li><RouterLink to="/ultra">Drogarias Ultra Popular</RouterLink></li>
           </ul>
         </div>
 

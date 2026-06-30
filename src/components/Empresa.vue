@@ -45,17 +45,17 @@
 
 <script setup>
 import logoDPA from '@/assets/logo-dpa.png'
-import logoPromedH from '@/assets/promedhloja.png'
+// import logoPromedH from '@/assets/promedhloja.png'
 import LogoZedobairro from '@/assets/logo-ze.png'
 import logoPromedHDist from '@/assets/promedhdistribuidora.png'
 import logoUltra from '@/assets/ultrapopular.png'
 
 const empresas = [
-  { nome: 'DPA', logo: logoDPA, link: '#' },
-  { nome: 'PROmédH Produtos', logo: logoPromedH, link: '#' },
-  { nome: 'Zé do Bairro', logo: LogoZedobairro, link: '/ze-do-bairro' },
-  { nome: 'PROmédH Distribuidora', logo: logoPromedHDist, link: '#' },
-  { nome: 'Ultra Popular', logo: logoUltra, link: '/ultra' },
+  { nome: 'DPA', logo: logoDPA, },
+  // { nome: 'PROmédH Produtos', logo: logoPromedH, },
+  { nome: 'Zé do Bairro', logo: LogoZedobairro, },
+  { nome: 'PROmédH Distribuidora', logo: logoPromedHDist, },
+  { nome: 'Ultra Popular', logo: logoUltra,  },
 ]
 </script>
 

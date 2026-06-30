@@ -36,6 +36,7 @@
       </div>
     </div>
   </nav>
+  <br><br><br>
 </template>
 
 <style scoped>
