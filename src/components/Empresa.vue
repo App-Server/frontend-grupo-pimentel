@@ -108,10 +108,10 @@ const empresas = [
 }
 
 .logo-img {
-  max-width: 85%;
+  max-width: 100%;
   max-height: 55px;
   /* Importante: Começa fosco/apagado */
-  filter: brightness(0) invert(1) opacity(0.4); 
+  filter: grayscale(1) opacity(0.4); 
   transition: all 0.3s ease;
 }
 
@@ -137,7 +137,14 @@ const empresas = [
 
 .company-item:hover .logo-img {
   /* Quando o mouse entra, a logo acende 100% */
-  filter: brightness(0) invert(1) opacity(1);
+  /* filter: brightness(0) invert(1) opacity(1);
+  // transform: scale(1.05);
+}
+
+.company-item:hover .logo-img {
+  /* Remove os filtros de cor, trazendo a logo original de volta com 100% de opacidade */
+  filter: none; 
+  opacity: 1;
   transform: scale(1.05);
 }
 
