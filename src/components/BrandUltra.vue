@@ -1,6 +1,7 @@
 <template>
   <section class="store-section">
     <div class="container">
+      
       <h2 class="section-title">Nossas Unidades</h2>
       
       <div class="cards-container">
@@ -8,7 +9,7 @@
 
           <div class="image-wrapper">
             <img 
-              :src="store.imagem || 'https://via.placeholder.com/400x250?text=Farmácia'" 
+              :src="store.imagem || 'https://www.drogariasultrapopular.com.br/wp-content/themes/acfarma/assets/images/ultrapopular_celular_com_sombra.png'" 
               :alt="store.name" 
               class="company-image"
             >
@@ -55,7 +56,7 @@ const stores = [
     googleMaps: "https://www.google.com/maps/search/?api=1&query=Drogarias+Ultra+Popular+Av+Francisco+Porto+151"
   },
   {
-    imagem: "https://lh3.googleusercontent.com/p/AF1QipNu6n5joTung9OOPDL82AjJ89bxHCFQ2omQ9sYI=s680-w680-h510-rw",
+    imagem: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWle2zNeRqgSH1t-bery-nBCU3TPIsk3o2ekNS6r-hLPt-zCTbrbTFANxgQ1V3LBKQ_V0FgjKSGYaFQKb7pxi136zM8Zb96uc93GqZ6E4qC3KhQ5XcoAFr2GtGU9wMrqmBxFlBkrzh6v8j85=s680-w680-h510-rw",
     name: "Drogarias Ultra Popular",
     category: "Farmácia",
     address: "Av Doutor José Thomas D'Ávila Nabuco, 745",
@@ -63,7 +64,7 @@ const stores = [
     googleMaps: "https://www.google.com/maps/search/?api=1&query=Drogarias+Ultra+Popular+Av+Doutor+Jose+Thomas+745"
   },
   {
-    imagem: "https://lh3.googleusercontent.com/p/AF1QipNu6n5joTung9OOPDL82AjJ89bxHCFQ2omQ9sYI=s680-w680-h510-rw",
+    imagem: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWng2QH9GWof4V6pNToMM6-WaEAI9dTxvBEgjV8-Ou0Q2fhWboxFdbY1PjkBR-j1pg5FPk9kPozwmntvQCROyJ0fiRFX8eKULhoEhTDrogKKqER0YGRcgSgAr6ujp803BsCGS6yTZw=s680-w680-h510-rw",
     name: "Drogarias Ultra Popular",
     category: "Farmácia",
     address: "R. G, 17",
@@ -71,12 +72,12 @@ const stores = [
     googleMaps: "https://www.google.com/maps/search/?api=1&query=Drogarias+Ultra+Popular+Rua+G+17"
   },
   {
-    imagem: "https://lh3.googleusercontent.com/p/AF1QipNu6n5joTung9OOPDL82AjJ89bxHCFQ2omQ9sYI=s680-w680-h510-rw",
+    imagem: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm20jSeXbU54QfDqoP3tI_pWwLU6ZRNhQP0MZ0RXN1-G5hGubcx5YZYFLnJkW_Je0vnnwMGT17DRxv5-ZAlm99Iupgd1QvAXXYHPjO6SCYPrtnsoMHWy-EMGFC4EMitBgyOeEW8nNfDkEHb=s680-w680-h510-rw",
     name: "Drogarias Ultra Popular",
     category: "Farmácia",
-    address: "-",
-    bairro: "EM BREVE",
-    googleMaps: ""
+    address: "Av. Gen. Antônio Sebastião Basílio Pirro, 835 - Centro, ",
+    bairro: "Barra dos Coqueiros",
+    googleMaps: "https://www.google.com/maps/search/?api=1&query=Drogarias+Ultra+Popular,+Av+Oce%C3%A2nica,+14+-+Prisco+Viana,+Barra+dos+Coqueiros+-+SE,+49140-096"
   }
 ];
 </script>
