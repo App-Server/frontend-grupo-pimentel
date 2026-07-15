@@ -20,12 +20,10 @@
           <li class="nav-item">
             <RouterLink class="nav-link fw-bold" to="ultra">Ultra Popular</RouterLink>
           </li>
-          <!-- <li class="nav-item">
-            <RouterLink class="nav-link fw-bold" to="">Promedh</RouterLink>
-          </li>
           <li class="nav-item">
-            <RouterLink class="nav-link fw-bold" to="">DPA & Promedh</RouterLink>
-          </li> -->
+            <a class="nav-link fw-bold" href="https://zedobairrofarmacias.com.br/">Franquia Zé do Bairro</a>
+          </li>
+          
         </ul>
       </div>
 
